@@ -86,5 +86,21 @@ class CursoController extends IncludesController{
          }
     }
 
+    public function Eliminar(){
+        $curso = new Curso();
+        $curso->__SET('idCurso',$_REQUEST['idCurso']);      
+        $curso->__SET('modificado_por',$_SESSION['Usuario_Actual']);
+        $curso->__SET('eliminado',1); 
+        $eliminar_curso = $this->model->Eliminar($curso);  
+         
+        if($eliminar_curso=='error'){
+            echo 'No se Ha Podido Eliminar la Curso';
+            header('Location: index.php?c=Curso');            
+        }else{
+            echo 'Origen Eliminado Correctamente';
+            header('Location: index.php?c=Curso');
+        }
+    }
+
 
 }

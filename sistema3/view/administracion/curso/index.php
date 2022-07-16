@@ -5,7 +5,7 @@
 	</h1>
 	<ol class="breadcrumb">
 		<li><a href="index.php"><i class="fa fa-dashboard"></i> Inicio</a></li>           
-	    <li class="active">Personal</li>
+	    <li class="active">Cursol</li>
 	</ol>
 </section>
 
@@ -46,7 +46,7 @@
                             		<a href="?c=Curso&a=v_Actualizar&idCurso=<?php echo $curso['idCurso']; ?>" class="btn btn-primary btn-xs " data-toggle="tooltip" data-placement="top" title="Actualizar">
                                    		<i class="fa fa-pencil"></i>   
                                		</a>
-                               		<a class="btn btn-danger btn-xs EliminarCurso" data-id="<?php echo $curso['idCurso']; ?>" data-curso="<?php echo $curso['apellido_paterno'].' '.$persona['apellido_materno'].' '.$persona['primer_nombre'].' '.$persona['segundo_nombre']; ?>" data-toggle="tooltip" data-placement="top" title="Eliminar">
+                               		<a class="btn btn-danger btn-xs EliminarCurso" data-id="<?php echo $curso['idCurso']; ?>" data-curso="<?php echo $curso['nombre']; ?>" data-toggle="tooltip" data-placement="top" title="Eliminar">
                                    		<i class="fa fa-trash"></i>   
                                		</a>
 
@@ -66,18 +66,18 @@
 <script>
 	
 	$(document).ready(function() {
-		$(".EliminarPersona").click(function(event) {
-			idPersona=$(this).attr('data-id');
+		$(".EliminarCurso").click(function(event) {
+			idCurso=$(this).attr('data-id');
 			bootbox.dialog({
-            message: "¿Estas seguro de eliminar a <b>"+$(this).attr('data-persona')+"</b>?",
-            title: "Eliminar Persona",
+            message: "¿Estas seguro de eliminar a <b>"+$(this).attr('data-curso')+"</b>?",
+            title: "Eliminar Curso",
             buttons: {
                 main: {
                     label: "Eliminar",
                     className: "btn-primary",
                     callback: function() {
                         //console.log('Eliminado al usuario');
-                        window.location.href = "?c=Persona&a=Eliminar&idPersona="+idPersona;
+                        window.location.href = "?c=Curso&a=Eliminar&idCurso="+idCurso;
                     }
                 },
                 danger: {

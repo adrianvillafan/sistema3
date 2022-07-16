@@ -90,7 +90,24 @@ class CursoModel
         }
     }    
 
+    public function Eliminar(Curso $curso)
+    {
+       
+        $this->bd = new Conexion();
+        $stmt = $this->bd->prepare("UPDATE curso SET  modificado_por=:modificado_por,eliminado=:eliminado WHERE idCurso = :idCurso");
 
+        $stmt->bindParam(':idCurso',$curso->__GET('idCurso'));         
+        $stmt->bindParam(':modificado_por',$curso->__GET('modificado_por'));
+        $stmt->bindParam(':eliminado',$curso->__GET('eliminado'));    
+        if (!$stmt->execute()) {
+            return 'error';
+        //print_r($stmt->errorInfo());
+        }else{
+            
+            return 'exito';
+        }
+         
+    }
 
  
 }
