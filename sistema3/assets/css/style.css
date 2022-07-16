@@ -1,0 +1,260 @@
+.has-error small{color:red;font-weight:normal;margin-left:5px;}
+
+
+/* Bootstrap panel color JPuSoluciones */
+
+.panel{
+
+        margin: 1em;
+}
+
+.panel-danger_dark {
+    border-color: #ddd;
+}
+
+.panel-danger_dark>.panel-heading {
+    color: #fff;
+    background-color: rgb(177, 27, 35);
+    border-color: #ddd;
+}
+
+.box-body_table{
+overflow: scroll;
+border: top;
+}
+
+
+
+/* Semáforo CSS vertical */
+
+ul.semaforo {
+  float: right;
+  position: relative;
+  /* width: 30px; */
+  margin: 0 2px;
+  padding: 1px;
+  list-style-type: none;
+/*  border: 1px double grey;*/
+  background: black;
+  /* background: linear-gradient( -90deg, #45484d 0%, #000000 100%); */
+  border-radius: 10%;
+  box-shadow: 0px 0px 0 4px rgba(0,0,0,.8);
+}
+ul.semaforo li {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: lightgrey;
+  text-align: center;
+
+  /* margin: 10px 0; */
+}
+/*ul.semaforo li:after {
+content: "";
+width: 60px;
+height: 30px;
+position: absolute;
+left: 20px;
+top: 10px;
+box-shadow: 0px 0 20px 35px rgba(20,20,20,.1);
+border-radius: 30px / 15px;
+}*/
+.rojo li:nth-of-type(1) {
+  background: #ff0000;
+  box-shadow: 0px 0px 0 1px rgb(251, 28, 0);
+  color:#fff;
+}
+.ambar li:nth-of-type(1) {
+background: #ff9933;
+box-shadow: 0px 0px 0 1px rgb(255, 153, 51);
+color:#fff;
+}
+.verde li:nth-of-type(1) {
+background: #00ff00;
+box-shadow: 0px 0px 0 1px rgb(0, 255, 0);
+color:#000;
+}
+.font-bold{
+font-weight: bold;
+}
+
+.msg_file{
+  margin-top: 1em;
+}
+
+
+.bs-callout {
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #eee;
+    border-left-width: 5px;
+    border-radius: 3px;
+}
+.bs-callout h4 {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+.bs-callout p:last-child {
+    margin-bottom: 0;
+}
+.bs-callout code {
+    border-radius: 3px;
+}
+.bs-callout+.bs-callout {
+    margin-top: -5px;
+}
+.bs-callout-default {
+    border-left-color: #777;
+}
+.bs-callout-default h4 {
+    color: #777;
+}
+.bs-callout-primary {
+    border-left-color: #428bca;
+}
+.bs-callout-primary h4 {
+    color: #428bca;
+}
+.bs-callout-success {
+    border-left-color: #5cb85c;
+}
+.bs-callout-success h4 {
+    color: #5cb85c;
+}
+.bs-callout-danger {
+    border-left-color: #d9534f;
+}
+.bs-callout-danger h4 {
+    color: #d9534f;
+}
+.bs-callout-warning {
+    border-left-color: #f0ad4e;
+}
+.bs-callout-warning h4 {
+    color: #f0ad4e;
+}
+.bs-callout-info {
+    border-left-color: #5bc0de;
+}
+.bs-callout-info h4 {
+    color: #5bc0de;
+}
+
+.txt-datosvalidacion{
+    background: red;
+}
+
+
+
+
+
+
+.formulario__grupo-input {
+    position: relative;
+}
+
+.formulario__input {
+    width: 100%;
+    background: #fff;
+    border: 1px solid #A5B6BC;
+    border-radius: 3px;
+    height: 32px;
+    line-height: 45px;
+    padding: 0 40px 0 10px;
+    transition: .3s ease all;
+}
+
+.formulario__input:focus {
+    border: 1px solid #0075FF;
+    outline: none;
+    box-shadow: 3px 0px 10px rgba(163,163,163, 0.4);
+}
+
+.formulario__input-error {
+    font-size: 12px;
+    margin-bottom: 0;
+    display: none;
+}
+
+.formulario__input-error-activo {
+    display: block;
+}
+
+.formulario__validacion-estado {
+    position: absolute;
+    right: 10px;
+    bottom: 15px;
+    z-index: 100;
+    font-size: 16px;
+    opacity: 0;
+}
+
+/* ----- -----  Estilos para Validacion ----- ----- */
+.formulario__grupo-correcto .formulario__validacion-estado {
+    color: #1ed12d;
+    opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__label {
+    color: #bb2929;
+}
+
+.formulario__grupo-incorrecto .formulario__validacion-estado {
+    color: #bb2929;
+    opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__input {
+    border: 1px solid #bb2929;
+}
+
+
+/* ----- -----  ESTILOS AVANCE Y RESULTADOS DE LA SEGMENTACION ----- ----- */
+
+.box-table_avance_segmentacion .box-header .box-title{
+    font-weight: bolder;
+}
+.table_avance_segmentacion thead tr th{
+    background: rgba(112, 0, 0, 1);
+    color: #fff;
+    text-align: center;
+}
+
+td.cell-name_row_first{
+    background-color:#FFF2CC;
+    text-align: left;
+    padding-left: 1em;
+ 
+}
+td.cell-name_row_second{
+    background-color:#FFF2CC;
+    text-align: left;
+    padding-left: 1em;
+}
+td.cell-indicador_ideal{
+    background-color: #E7E6E6;
+    font-weight: bold;
+}
+.fa-rotate-45 {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+
+table.table_avance_segmentacion tbody th, table.table_avance_segmentacion tbody td{
+    padding: 2px;
+    padding-left: 1em;
+}
+
+.table_avance_segmentacion tr td .progress {
+    margin: 0;
+}
+
+table.dataTable thead th, table.dataTable thead td{
+padding: 2px;
+    
+}
