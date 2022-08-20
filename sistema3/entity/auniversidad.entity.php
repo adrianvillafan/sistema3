@@ -1,23 +1,21 @@
 <?php
 
-class Alumno
+class Auniversidad
 {
 
 
 
-    private $idAlumno;
-    private $primer_nombre;
-    private $apellido_paterno;
-    private $apellido_materno;
-    private $edad;
-    private $dni;
-    private $fecha_nacimiento;
-    private $curso;
-    private $carrera;
+    private $idAuniversidad;
+    private $codigo;
+    private $nombre;
+    private $direccion;
+    private $licenciado;
+    private $cantidad_carreras;
     private $ingresado_por;
     private $modificado_por;
     private $activo;
     private $eliminado;
+
     
     public function __GET($atributo){ 
 
