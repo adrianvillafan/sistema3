@@ -73,7 +73,7 @@
             <li><a href="index.php?c=Curso"><i class="fa fa-circle-o" aria-hidden="true"></i> Curso</a></li>
           </li>
           <li>
-            <li><a href="index.php?c=Auniversidad"><i class="fa fa-circle-o" aria-hidden="true"></i> Universidad</a></li>
+            <li><a href="index.php?c=Auniversidad"><i class="fa fa-circle-o" aria-hidden="true"></i> Universidades</a></li>
           </li>
         </ul>
       </li>
